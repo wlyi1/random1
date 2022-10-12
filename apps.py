@@ -73,9 +73,13 @@ if submitted:
 st.write('Test Your Knowledge')
 
 db_content = db.fetch().items
-st.write(db_content)
+#st.write(db_content)
 df = pd.DataFrame(db_content)
 st.write(df)
-st.write(df['Random'][0])
+#st.write(df['Random'][len(df)-1])
+
+st.info(df['Random'][len(df)-1])
+st.success(df['Random'][len(df)-2])
+st.warning(df['Random'][len(df)-3])
 
 
