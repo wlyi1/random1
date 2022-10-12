@@ -75,19 +75,10 @@ if submitted:
 db_content = db.fetch().items
 #st.write(db_content)
 df = pd.DataFrame(db_content)
-df['Tanggal'] = pd.to_datetime(df['Tanggal'])
-df=df.sort_values(by='Tanggal')
-#df.set_index('Tanggal')
-st.write(df)
-lis_tgl = list(df.Tanggal)
-lis_tgl.sort(reverse=True)
-st.write(lis_tgl)
-st.write(df['Tanggal'][0])
-st.write(lis_tgl[0] == df['Tanggal'][0])
-#data_1 = df['Random'].loc[df['Tanggal'] == lis_tgl[0]][0]
+data_lis = df['Random'].value_counts()[:3].index.tolist()
 
-st.info(data_1)
-st.success(df['Random'][1])
-st.warning(df['Random'][2])
+st.info(data_lis[0])
+st.success(data_lis[1])
+st.warning(data_lis[2])
 
 
