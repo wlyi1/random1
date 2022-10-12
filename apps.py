@@ -65,7 +65,7 @@ db1 = deta.Base('Story')
 with st.form("my_form"):
     st.write("Ceritain ke RandomKu dong tentang aktivitas randommu hari ini 😃")
     nama = st.text_input("Namanya? 🧑 👩")
-    cerita = st.text_input("Cerita singkatnya gimana nih? ✍🏻")
+    cerita = st.text_area("Cerita singkatnya gimana nih? ✍🏻")
     submitted = st.form_submit_button("Submit")
 
 # If the user clicked the submit button. write the data from the form to the database.
