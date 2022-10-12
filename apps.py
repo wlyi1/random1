@@ -23,7 +23,7 @@ image3 = Image.open(BytesIO(resp.content))
 
 #Data Sources
 data = pd.read_csv('rand_aktivitas.csv')
-image1 = 'https://raw.githubusercontent.com/wlyi1/random/main/Random/a2.png'
+image1 = 'https://raw.githubusercontent.com/wlyi1/random/main/Random/a3a.png'
 st.image(image1)
 
 list_rand = data.name
