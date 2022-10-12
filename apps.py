@@ -50,6 +50,8 @@ deta = Deta(st.secrets["project_key"])
 # If you need a new database, just use another name.
 db = deta.Base("random")
 col1, col2, col3 = st.columns([1,1,1])
+col1.write(" ")
+col3.write(' ')
 if col2.button('Randomin'):
     st.image(image3)
     db.put({'Tanggal' : tgl, 'Random' : today_rand})
