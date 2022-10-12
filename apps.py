@@ -76,13 +76,13 @@ db_content = db.fetch().items
 #st.write(db_content)
 df = pd.DataFrame(db_content)
 df['Tanggal'] = pd.to_datetime(df['Tanggal'])
-#df=df.sort_values(by='Tanggal')
+df=df.sort_values(by='Tanggal')
 #df.set_index('Tanggal')
 st.write(df)
 lis_tgl = list(df.Tanggal)
 lis_tgl.sort(reverse=True)
 st.write(lis_tgl)
-st.write(lis_tgl[0] == df['Tanggal'][1])
+st.write(lis_tgl[0] == df['Tanggal'][0])
 #data_1 = df['Random'].loc[df['Tanggal'] == lis_tgl[0]][0]
 
 st.info(data_1)
