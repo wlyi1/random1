@@ -70,7 +70,7 @@ with st.form("my_form"):
 if submitted:
     db1.put({"Nama": nama, 'Umur' : age, "Cerita": cerita})
 
-
+st.write('wawk')
 
 db_content = db.fetch().items
 #st.write(db_content)
