@@ -72,7 +72,7 @@ with st.form("my_form"):
 # You can store any data you want here. Just modify that dictionary below (the entries between the {}).
 
 if submitted:
-    db1.put({"Nama": nama, 'Umur' : age, "Cerita": cerita})
+    db1.put({"Nama": nama, "Cerita": cerita})
 
 
 
