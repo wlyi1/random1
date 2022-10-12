@@ -54,8 +54,8 @@ db = deta.Base("random")
 # write the data from the form to the database.
 # You can store any data you want here. Just modify that dictionary below (the entries between the {}).
 if submitted:
-    #st.image(image3)
-    db.put({'Tanggal' : tgl_random, 'Random' : today_rand})
+    st.image(image3)
+    db.put({'Tanggal' : '15', 'Random' : today_rand})
     #db.put({"names": name, "ages": age})
 
 "---"
