@@ -76,8 +76,8 @@ db_content = db.fetch().items
 #st.write(db_content)
 df = pd.DataFrame(db_content)
 df['Tanggal'] = pd.to_datetime(df['Tanggal'])
-df=df.sort_values(by='Tanggal')
-df.set_index('Tanggal')
+#df=df.sort_values(by='Tanggal')
+#df.set_index('Tanggal')
 st.write(df)
 
 st.info(df['Random'][0])
