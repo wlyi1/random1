@@ -76,7 +76,7 @@ db_content = db.fetch().items
 #st.write(db_content)
 df = pd.DataFrame(db_content)
 st.write(df)
-#st.write(df['Random'][len(df)-1])
+df['Tanggal'] = pd.to_datetime(df['Tanggal'])
 
 st.info(df['Random'][len(df)-1])
 st.success(df['Random'][len(df)-2])
