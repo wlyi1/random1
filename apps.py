@@ -80,8 +80,8 @@ df=df.sort_values(by='Tanggal')
 df.set_index('Tanggal')
 st.write(df)
 
-st.info(df['Random'][len(df)-1])
-st.success(df['Random'][len(df)-2])
-st.warning(df['Random'][len(df)-3])
+st.info(df['Random'][0])
+st.success(df['Random'][1])
+st.warning(df['Random'][2])
 
 
