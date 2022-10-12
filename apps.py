@@ -79,8 +79,11 @@ df['Tanggal'] = pd.to_datetime(df['Tanggal'])
 #df=df.sort_values(by='Tanggal')
 #df.set_index('Tanggal')
 st.write(df)
+lis_tgl = list(df.Tanggal)
+lis_tgl.sort(reverse=True)
+data_1 = df['Random'].loc[df['Tanggal'] == lis_tgl[0]][0]
 
-st.info(df['Random'][0])
+st.info(data_1)
 st.success(df['Random'][1])
 st.warning(df['Random'][2])
 
