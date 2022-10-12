@@ -82,6 +82,7 @@ st.write(df)
 lis_tgl = list(df.Tanggal)
 lis_tgl.sort(reverse=True)
 st.write(lis_tgl)
+st.write(df['Tanggal'][0])
 st.write(lis_tgl[0] == df['Tanggal'][0])
 #data_1 = df['Random'].loc[df['Tanggal'] == lis_tgl[0]][0]
 
