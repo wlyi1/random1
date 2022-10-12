@@ -81,7 +81,8 @@ df['Tanggal'] = pd.to_datetime(df['Tanggal'])
 st.write(df)
 lis_tgl = list(df.Tanggal)
 lis_tgl.sort(reverse=True)
-data_1 = df['Random'].loc[df['Tanggal'] == lis_tgl[0]][0]
+st.write(lis_tgl)
+#data_1 = df['Random'].loc[df['Tanggal'] == lis_tgl[0]][0]
 
 st.info(data_1)
 st.success(df['Random'][1])
