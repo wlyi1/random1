@@ -32,6 +32,7 @@ image1 = 'https://raw.githubusercontent.com/wlyi1/random/main/Random/a3a.png'
 st.image(image1)
 list_rand = data.name
 tgl_random = datetime.datetime.now()
+tgl = tgl_random.strftime("%m/%d/%Y, %H:%M:%S")
 today_rand = random.choice(list_rand)
 hari = dt.today().strftime('%Y-%m-%d')
 path_font = "Quicksand-Regular.ttf"
@@ -55,7 +56,7 @@ db = deta.Base("random")
 # You can store any data you want here. Just modify that dictionary below (the entries between the {}).
 if submitted:
     st.image(image3)
-    db.put({'Tanggal' : '15', 'Random' : today_rand})
+    db.put({'Tanggal' : tgl, 'Random' : today_rand})
     #db.put({"names": name, "ages": age})
 
 "---"
