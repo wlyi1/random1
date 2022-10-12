@@ -73,6 +73,7 @@ with st.form("my_form"):
 
 if submitted:
     db1.put({"Nama": nama, "Cerita": cerita})
+    st.write('Terimakasih 👍')
 
 
 
